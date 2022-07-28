@@ -1,27 +1,39 @@
 body{
     width: 960px;
-    padding: 0px 10px;
+    padding: 0 10px;
+    margin: 24px auto;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 22px;
 }
+main{
+    margin-top: 22px;
+}
 .logo, .contact, .more{
-    display: table-cell;
     height: 108px;
     background-color: #777777;
-    flex: auto;
-    margin-right: 23px;
     margin-bottom: 20px;
 }
 .logo{
-    width: 123px;
+    width: 10%;
 }
 .contact{
-    width: 280px;
+    width: 30%;
 }
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /* height: 820px; */
+}
+
 .more{
-    width: 513px;
-    margin-right: 0px;
+    width: 50%;
     padding: 24px;
     height: 60px;
 }
@@ -36,24 +48,78 @@ a{
 }
 ul{
     padding: 0;
+    margin: 0;
 }
-li{
+ul.grey > li{
     list-style-type: none;
 }
 .left{
-    display: inline-block;
-    padding: 14px 32px 14px 14px;
-    width: 138px;
-    height: 307px;
-    background-color: #777777;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    /* padding: 14px 32px 14px 14px; */
+    width: 184px;
+    /* background-color: #777777; */
     color: white;
     float: left;
 }
-.center{
-    display: inline-block;
+.grey {
+    width: 170px;
+    padding: 14px;
+    background-color: #777777;
+}
+.right{
+    /* width: 775px; */
+    margin-left: 20px;
+}
+.intro{
+    height: 210px;
     background-color: #DCDCDC;
-    height: 209px;
     padding: 22px 69px 19px 21px;
-    float: right;
-    width: 666px;
+}
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.images > img {
+    display: inline-block; 
+    width: 133px;
+    height: 153px;
+    margin: 21px;
+}
+.info-left, .info-right{
+    display: inline-block;
+    width: 368px;
+    background-color: #DCDCDC;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.foot-left ul{
+    column-count: 2;
+    background-color: #777777;
+    color: white;
+}
+.foot-rigth, .foot-left, .foot-center{
+    width: 30%;
+    /* padding: 20px; */
+}
+div.foot-rigth > img{
+    width: 308px;
+    display: inline;
+    height: 75px;
+    right: 0;
+}
+div.foot-center{
+    list-style-type: square;
+    background-color: #777777;
+    color: white;
+}
+div.intro > ul{
+    list-style-type: circle;
+}
+.psd-info{
+    margin: 30px;
 }
