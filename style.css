@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body{
     width: 960px;
     padding: 0 10px;
@@ -15,10 +18,10 @@ main{
     margin-bottom: 20px;
 }
 .logo{
-    width: 10%;
+    width: 12%;
 }
 .contact{
-    width: 30%;
+    width: 33%;
 }
 .header {
     display: flex;
@@ -29,13 +32,12 @@ main{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    /* height: 820px; */
+    margin-bottom: 24px;
 }
 
 .more{
     width: 50%;
     padding: 24px;
-    height: 60px;
 }
 header {
     display: flex;
@@ -69,18 +71,23 @@ ul.grey > li{
     background-color: #777777;
 }
 .right{
-    /* width: 775px; */
-    margin-left: 20px;
+    width: 745px;
+    /* margin-left: 20px; */
 }
 .intro{
-    height: 210px;
     background-color: #DCDCDC;
     padding: 22px 69px 19px 21px;
 }
 .flex {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+    margin: 19px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 129px);
+    gap: 24px;
+}
+.flex img {
+    width: 133px;
+    height: 152px;
 }
 .images > img {
     display: inline-block; 
@@ -88,38 +95,48 @@ ul.grey > li{
     height: 153px;
     margin: 21px;
 }
+.text-company {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    gap: 16px;
+}
 .info-left, .info-right{
-    display: inline-block;
-    width: 368px;
+    padding: 22px 21px;
     background-color: #DCDCDC;
 }
 footer{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: end;
+    margin-top: 24px;
+}
+.foot-rigth{
+    display: grid;
+    grid-template-rows: 1fr;
+    /* grid-template-columns: 1fr; */
+}
+.foot-left{
+    padding: 4% 8%;
+    margin-right: 10%;
+    background-color: #777777;
+}
+.foot-center{
+    background-color: #777777;
+    color: white;
+    padding: 4% 11%;
+    margin-right: 10%;
 }
 .foot-left ul{
     column-count: 2;
-    background-color: #777777;
     color: white;
 }
-.foot-rigth, .foot-left, .foot-center{
-    width: 30%;
-    /* padding: 20px; */
-}
-div.foot-rigth > img{
-    width: 308px;
-    display: inline;
-    height: 75px;
-    right: 0;
-}
-div.foot-center{
+
+div.foot-center > ul{
     list-style-type: square;
-    background-color: #777777;
-    color: white;
 }
 div.intro > ul{
     list-style-type: circle;
 }
 .psd-info{
-    margin: 30px;
+    padding: 10px 0px 10px 60px;
 }
